@@ -21,8 +21,10 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = [
+  "matplotlib==3.11.1",
   "pytest==9.1.1",
   "pytest-cov==7.1.0",
+  "python-docx==1.2.0",
   "reportlab==5.0.0",
   "ruff==0.16.3",
 ]
