@@ -1,0 +1,52 @@
+Description
+"
+
+### **Dataset Description: Maternal Health Risk Prediction**  
+
+#### **Overview:**  
+The dataset consists of **1013 instances** with **6 features** and **1 target variable**. It captures critical maternal health indicators to predict the **risk level** during pregnancy. The dataset has been collected from hospitals, community clinics, and maternal healthcare centers in rural areas of Bangladesh.  
+
+#### **Objective:**  
+The goal of this dataset is to predict the **Risk Level** of maternal health based on various physiological and clinical factors. The target variable, **RiskLevel**, represents the predicted intensity of health risks during pregnancy.  
+
+---
+
+### **Feature Descriptions:**  
+
+| **Variable Name** | **Role**    | **Type**   | **Description**                                      | **Units**   | **Missing Values** |
+|------------------|------------|-----------|------------------------------------------------------|-------------|--------------------|
+| **Age**         | Feature    | Integer   | Age of the pregnant woman                           | Years       | No                 |
+| **SystolicBP**  | Feature    | Integer   | Upper value of blood pressure                      | mmHg        | No                 |
+| **DiastolicBP** | Feature    | Integer   | Lower value of blood pressure                      | mmHg        | No                 |
+| **BS**         | Feature    | Float     | Blood glucose levels                               | mmol/L      | No                 |
+| **BodyTemp**    | Feature    | Float     | Body temperature                                   | °F          | No                 |
+| **HeartRate**   | Feature    | Integer   | Normal resting heart rate                         | bpm         | No                 |
+| **RiskLevel**   | Target     | Categorical | Predicted risk intensity during pregnancy         | (0, 1, 2)   | No                 |
+
+---
+
+### **Target Variable Mapping:**
+- **0 → Low Risk**  
+- **1 → Mid Risk**  
+- **2 → High Risk**  
+
+---
+
+### **Sample Data:**
+| Age | SystolicBP | DiastolicBP | BS  | BodyTemp | HeartRate | RiskLevel |
+|-----|-----------|------------|-----|----------|----------|-----------|
+| 25  | 130       | 80         | 15.0 | 98.0     | 86       | 2 (High Risk) |
+| 35  | 140       | 90         | 13.0 | 98.0     | 70       | 2 (High Risk) |
+| 29  | 90        | 70         | 8.0  | 100.0    | 80       | 2 (High Risk) |
+| 30  | 140       | 85         | 7.0  | 98.0     | 70       | 2 (High Risk) |
+| 35  | 120       | 60         | 6.1  | 98.0     | 76       | 0 (Low Risk) |
+
+---
+
+### **Key Insights:**
+- **Blood Pressure (Systolic & Diastolic)**: A crucial factor in determining maternal health risk.  
+- **Blood Sugar Levels (BS)**: Higher blood sugar levels may correlate with increased risk levels.  
+- **Body Temperature & Heart Rate**: Important physiological indicators of maternal health.  
+- **Age Factor**: Higher maternal age may contribute to an increased risk level.  
+
+    "

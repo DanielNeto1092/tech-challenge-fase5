@@ -1,0 +1,38 @@
+services:
+  backend:
+    build:
+      context: ./backend
+    environment:
+      GUARDIA_OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      GUARDIA_OPENAI_MODEL: ${OPENAI_MODEL:-gpt-5.6-luna}
+      GUARDIA_CORS_ORIGINS: http://localhost:8080
+      GUARDIA_DATABASE_PATH: data/audit/guardia_ai.db
+    ports:
+      - "8000:8000"
+    volumes:
+      - guardia_audit:/app/data/audit
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "python",
+          "-c",
+          "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=3)",
+        ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 15s
+
+  frontend:
+    build:
+      context: ./frontend
+    depends_on:
+      backend:
+        condition: service_healthy
+    ports:
+      - "8080:80"
+
+volumes:
+  guardia_audit:
+

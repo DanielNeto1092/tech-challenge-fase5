@@ -1,0 +1,23 @@
+{
+  "source_id": "ms-opas-dmg-2021",
+  "title": "Cuidados Obstétricos em Diabetes Mellitus Gestacional no Brasil",
+  "issuer": "Ministério da Saúde, OPAS/OMS Brasil, FEBRASGO e Sociedade Brasileira de Diabetes",
+  "year": 2021,
+  "audience": "Profissionais de saúde",
+  "license": "CC BY-NC-SA 4.0",
+  "url": "https://bvsms.saude.gov.br/bvs/publicacoes/cuidados_obstetricos_diabetes_gestacional_brasil.pdf",
+  "sections": [
+    {
+      "reference": "pp. 43–58 — Propedêutica e acompanhamento materno",
+      "text": "O acompanhamento de diabetes gestacional já identificado utiliza medições com contexto temporal definido, técnica apropriada e avaliação clínica. Um único valor genérico não representa o acompanhamento completo."
+    },
+    {
+      "reference": "pp. 44–45 — Metas e automonitoramento glicêmico",
+      "text": "As metas apresentadas para acompanhamento diferenciam jejum e períodos pós-prandiais. Elas são metas de monitoramento de uma condição identificada, não critérios intercambiáveis de diagnóstico."
+    },
+    {
+      "reference": "p. 57 — Resumo do monitoramento",
+      "text": "A interpretação glicêmica precisa registrar unidade, relação com alimentação e momento da medição."
+    }
+  ]
+}

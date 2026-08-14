@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "guardia-ai-backend"
+version = "1.0.0"
+description = "Backend da Guardiã AI para apoio à triagem de risco materno."
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi==0.141.1",
+  "httpx==0.28.1",
+  "joblib==1.5.3",
+  "langchain-core==1.5.5",
+  "langchain-openai==1.5.1",
+  "pandas==2.3.3",
+  "pydantic-settings==2.15.0",
+  "scikit-learn==1.9.0",
+  "uvicorn[standard]==0.52.3",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest==9.1.1",
+  "pytest-cov==7.1.0",
+  "reportlab==5.0.0",
+  "ruff==0.16.3",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["app*", "training*"]
+
+[tool.pytest.ini_options]
+addopts = "-q --strict-markers"
+pythonpath = ["."]
+testpaths = ["tests"]
+filterwarnings = [
+  "ignore:Setting the shape on a NumPy array has been deprecated:DeprecationWarning:joblib.numpy_pickle",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]

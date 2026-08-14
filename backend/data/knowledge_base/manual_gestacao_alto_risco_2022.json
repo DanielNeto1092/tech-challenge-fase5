@@ -1,0 +1,31 @@
+{
+  "source_id": "ms-manual-alto-risco-2022",
+  "title": "Manual de Gestação de Alto Risco — 1ª edição eletrônica, 2022",
+  "issuer": "Ministério da Saúde",
+  "year": 2022,
+  "audience": "Profissionais de saúde",
+  "license": "CC BY-NC-SA 4.0",
+  "url": "https://bvsms.saude.gov.br/bvs/publicacoes/manual_gestacao_alto_risco.pdf",
+  "sections": [
+    {
+      "reference": "pp. 11–24 — Estratificação do risco obstétrico",
+      "text": "A estratificação do risco obstétrico é dinâmica e combina história clínica, condições atuais, fatores sociodemográficos e evolução da gestação."
+    },
+    {
+      "reference": "p. 19 — Fatores de risco relacionados à idade",
+      "text": "O quadro de estratificação inclui idade menor que 15 anos ou maior que 35 anos como fator contextual. O manual utiliza cortes de idade diferentes em situações específicas; idade isolada não é diagnóstico nem regra universal de encaminhamento."
+    },
+    {
+      "reference": "p. 55 impressa — Infecção grave e resposta inflamatória",
+      "text": "Temperatura e frequência cardíaca aparecem como componentes de critérios de resposta inflamatória em contexto de suspeita de infecção grave. O manual ressalta baixa especificidade desses critérios. Frequência cardíaca acima de 90 bpm não deve ser reutilizada como corte geral isolado de risco materno."
+    },
+    {
+      "reference": "cap. 10, p. 139 em diante — Diabetes mellitus gestacional",
+      "text": "A avaliação de diabetes gestacional depende do momento da gestação e do contexto da medição, como jejum ou tempos específicos do teste oral de tolerância à glicose."
+    },
+    {
+      "reference": "cap. 11, p. 149 — Síndromes hipertensivas",
+      "text": "O manual define hipertensão arterial na gravidez por pressão sistólica maior ou igual a 140 mmHg e/ou diastólica maior ou igual a 90 mmHg. Também orienta técnica de aferição e confirmação conforme o contexto."
+    }
+  ]
+}

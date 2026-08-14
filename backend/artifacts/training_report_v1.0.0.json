@@ -1,0 +1,249 @@
+{
+  "model_version": "1.0.0",
+  "random_state": 42,
+  "dataset": {
+    "path": "data/raw/maternal_health_risk.csv",
+    "sha256": "1d272d463635f9d4b94f268468253c9dbe1e78e576ee8badb1b773f4d749a752",
+    "audit": {
+      "raw_row_count": 1014,
+      "unique_exact_row_count": 452,
+      "exact_duplicate_rows_removed": 562,
+      "raw_class_counts": {
+        "low": 406,
+        "mid": 336,
+        "high": 272
+      },
+      "clean_class_counts": {
+        "low": 234,
+        "mid": 106,
+        "high": 112
+      },
+      "missing_value_counts": {
+        "age": 0,
+        "systolic_bp": 0,
+        "diastolic_bp": 0,
+        "blood_sugar": 0,
+        "body_temperature": 0,
+        "heart_rate": 0,
+        "risk_level": 0
+      },
+      "ignored_columns": [],
+      "unique_feature_vector_count": 416,
+      "duplicate_feature_vector_groups_after_exact_deduplication": 35,
+      "feature_vector_groups_with_conflicting_labels": 35,
+      "statistical_outliers_retained": {
+        "age": {
+          "lower_fence": -11.0,
+          "upper_fence": 69.0,
+          "row_count_outside_fences": 1,
+          "observed_minimum": 10.0,
+          "observed_maximum": 70.0
+        },
+        "systolic_bp": {
+          "lower_fence": 70.0,
+          "upper_fence": 150.0,
+          "row_count_outside_fences": 10,
+          "observed_minimum": 70.0,
+          "observed_maximum": 160.0
+        },
+        "diastolic_bp": {
+          "lower_fence": 27.5,
+          "upper_fence": 127.5,
+          "row_count_outside_fences": 0,
+          "observed_minimum": 49.0,
+          "observed_maximum": 100.0
+        },
+        "blood_sugar": {
+          "lower_fence": 5.250000000000001,
+          "upper_fence": 9.649999999999999,
+          "row_count_outside_fences": 210,
+          "observed_minimum": 6.0,
+          "observed_maximum": 19.0
+        },
+        "body_temperature": {
+          "lower_fence": 98.0,
+          "upper_fence": 98.0,
+          "row_count_outside_fences": 210,
+          "observed_minimum": 98.0,
+          "observed_maximum": 103.0
+        },
+        "heart_rate": {
+          "lower_fence": 55.0,
+          "upper_fence": 95.0,
+          "row_count_outside_fences": 2,
+          "observed_minimum": 7.0,
+          "observed_maximum": 90.0
+        }
+      },
+      "descriptive_statistics_after_exact_deduplication": {
+        "age": {
+          "count": 452.0,
+          "mean": 29.194690265486727,
+          "std": 13.767379039761805,
+          "min": 10.0,
+          "25%": 19.0,
+          "50%": 25.0,
+          "75%": 35.0,
+          "max": 70.0
+        },
+        "systolic_bp": {
+          "count": 452.0,
+          "mean": 110.55309734513274,
+          "std": 17.872281903878427,
+          "min": 70.0,
+          "25%": 90.0,
+          "50%": 120.0,
+          "75%": 120.0,
+          "max": 160.0
+        },
+        "diastolic_bp": {
+          "count": 452.0,
+          "mean": 75.41814159292035,
+          "std": 13.754577648723455,
+          "min": 49.0,
+          "25%": 65.0,
+          "50%": 80.0,
+          "75%": 86.0,
+          "max": 100.0
+        },
+        "blood_sugar": {
+          "count": 452.0,
+          "mean": 8.346172566371681,
+          "std": 2.8292090197565627,
+          "min": 6.0,
+          "25%": 6.9,
+          "50%": 7.5,
+          "75%": 7.9,
+          "max": 19.0
+        },
+        "body_temperature": {
+          "count": 452.0,
+          "mean": 98.6924778761062,
+          "std": 1.4108971095056662,
+          "min": 98.0,
+          "25%": 98.0,
+          "50%": 98.0,
+          "75%": 98.0,
+          "max": 103.0
+        },
+        "heart_rate": {
+          "count": 452.0,
+          "mean": 73.94911504424779,
+          "std": 8.156972945942476,
+          "min": 7.0,
+          "25%": 70.0,
+          "50%": 76.0,
+          "75%": 80.0,
+          "max": 90.0
+        }
+      },
+      "duplicate_policy": "Exact repeated rows are removed before splitting. Remaining equal feature vectors (including conflicting labels) are assigned as groups so no feature vector crosses train and test."
+    }
+  },
+  "split": {
+    "strategy": "best-balanced fold from StratifiedGroupKFold",
+    "test_size_requested": 0.2,
+    "train_row_count": 363,
+    "test_row_count": 89,
+    "train_class_counts": {
+      "low": 188,
+      "mid": 85,
+      "high": 90
+    },
+    "test_class_counts": {
+      "low": 46,
+      "mid": 21,
+      "high": 22
+    },
+    "train_feature_group_count": 332,
+    "test_feature_group_count": 84,
+    "feature_group_overlap_count": 0,
+    "preprocessing_fitted_on_training_partition_only": true
+  },
+  "candidate_models": [
+    "multinomial_logistic_regression",
+    "random_forest"
+  ],
+  "evaluations": {
+    "multinomial_logistic_regression": {
+      "accuracy": 0.5955056179775281,
+      "precision_macro": 0.5233618233618234,
+      "recall_macro": 0.5522303783173349,
+      "f1_macro": 0.5357142857142857,
+      "recall_by_class": {
+        "low": 0.6956521739130435,
+        "mid": 0.14285714285714285,
+        "high": 0.8181818181818182
+      },
+      "high_risk_false_negatives": 4,
+      "confusion_matrix": [
+        [
+          32,
+          11,
+          3
+        ],
+        [
+          13,
+          3,
+          5
+        ],
+        [
+          0,
+          4,
+          18
+        ]
+      ],
+      "confusion_matrix_label_order": [
+        "low",
+        "mid",
+        "high"
+      ]
+    },
+    "random_forest": {
+      "accuracy": 0.6966292134831461,
+      "precision_macro": 0.6443687891056312,
+      "recall_macro": 0.6677646025472113,
+      "f1_macro": 0.6537037037037038,
+      "recall_by_class": {
+        "low": 0.7608695652173914,
+        "mid": 0.3333333333333333,
+        "high": 0.9090909090909091
+      },
+      "high_risk_false_negatives": 2,
+      "confusion_matrix": [
+        [
+          35,
+          10,
+          1
+        ],
+        [
+          9,
+          7,
+          5
+        ],
+        [
+          0,
+          2,
+          20
+        ]
+      ],
+      "confusion_matrix_label_order": [
+        "low",
+        "mid",
+        "high"
+      ]
+    }
+  },
+  "selected_model": "random_forest",
+  "selection_justification": "Selected random_forest by the predefined lexicographic rule: maximize high-risk recall first (reducing high-risk false negatives), then macro F1, then accuracy. The holdout was not used for hyperparameter tuning.",
+  "global_feature_importance": {
+    "blood_sugar": 0.33475587865969564,
+    "systolic_bp": 0.20319394924021625,
+    "age": 0.1515665680674673,
+    "diastolic_bp": 0.12428152281283192,
+    "heart_rate": 0.10440012519105189,
+    "body_temperature": 0.08180195602873695
+  },
+  "local_explanation_method": "Exact tree-path probability decomposition for random forest or exact linear-logit decomposition for multinomial logistic regression.",
+  "final_fit": "Selected model refitted on every exact-deduplicated row."
+}

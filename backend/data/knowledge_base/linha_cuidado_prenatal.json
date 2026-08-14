@@ -1,0 +1,31 @@
+{
+  "source_id": "ms-linha-cuidado-prenatal",
+  "title": "Linha de Cuidado do Pré-natal de Baixo Risco",
+  "issuer": "Ministério da Saúde — Secretaria de Atenção Primária à Saúde",
+  "year": 2021,
+  "audience": "Profissionais de saúde",
+  "license": "Não explicitada na página consultada",
+  "url": "https://linhasdecuidado.saude.gov.br/portal/pre-natal-baixo-risco/",
+  "sections": [
+    {
+      "reference": "Planejamento terapêutico — hipertensão na gestação",
+      "url": "https://linhasdecuidado.saude.gov.br/portal/pre-natal-baixo-risco/unidade-de-atencao-primaria/planejamento-terapeutico/",
+      "text": "A Linha de Cuidado considera pressão sistólica maior ou igual a 140 mmHg ou diastólica maior ou igual a 90 mmHg para hipertensão, desde que a aferição seja adequada. Valores sistólicos maiores ou iguais a 160 mmHg e/ou diastólicos maiores ou iguais a 110 mmHg caracterizam crise hipertensiva e requerem avaliação obstétrica urgente."
+    },
+    {
+      "reference": "Situações de urgência — suspeita de pré-eclâmpsia",
+      "url": "https://linhasdecuidado.saude.gov.br/portal/pre-natal-baixo-risco/unidade-de-atencao-primaria/situacoes-urgencia/",
+      "text": "Pressão elevada após 20 semanas, associada a proteinúria ou sinais de disfunção de órgão-alvo, integra a suspeita de pré-eclâmpsia."
+    },
+    {
+      "reference": "Situações de urgência — febre",
+      "url": "https://linhasdecuidado.saude.gov.br/portal/pre-natal-baixo-risco/unidade-de-atencao-primaria/situacoes-urgencia/",
+      "text": "Temperatura maior ou igual a 38 °C demanda avaliação da causa no mesmo dia, especialmente quando acompanhada de cefaleia, fraqueza e dor abdominal ou lombar."
+    },
+    {
+      "reference": "Planejamento terapêutico — rastreamento de diabetes gestacional",
+      "url": "https://linhasdecuidado.saude.gov.br/portal/pre-natal-baixo-risco/unidade-de-atencao-primaria/planejamento-terapeutico/",
+      "text": "Os critérios de diabetes gestacional diferenciam glicemia de jejum e medidas do teste oral de tolerância à glicose entre 24 e 28 semanas."
+    }
+  ]
+}
